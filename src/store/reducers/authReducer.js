@@ -8,10 +8,14 @@ const initialState = {
 const authReducer = (state=initialState, {type, payload})=>{
     switch(type){
         case actions.CLEAR_AUTH_STATE:
+        case actions.CLEAR_DOCTOR_DETAILS_STATE:    
             return{
                 initialState
             }
         case actions.SIGN_UP_START:
+        case actions.SIGN_IN_START:
+        case actions.ADDING_DOCTOR_DETAILS_START:
+        case actions.ADDING_RATING_START:
             return{
                 ...state,
                 loading:true,
@@ -19,6 +23,9 @@ const authReducer = (state=initialState, {type, payload})=>{
             };
 
         case actions.SIGN_UP_SUCCESS:
+        case actions.SIGN_IN_SUCCESS:
+        case actions.ADDING_DOCTOR_DETAILS_SUCCESS:
+        case actions.ADDING_RATING_SUCCESS:
             return{
                 ...state,
                 loading:false,
@@ -26,6 +33,9 @@ const authReducer = (state=initialState, {type, payload})=>{
             }
 
         case actions.SIGN_UP_FAIL:
+        case actions.SIGN_IN_FAIL:
+        case actions.ADDING_DOCTOR_DETAILS_FAIL:
+        case actions.ADDING_RATING_SUCCESS:
             return{
                 ...state,
                 loading:false,
