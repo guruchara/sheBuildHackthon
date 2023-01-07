@@ -11,13 +11,13 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
         background-attachment: local;
         padding-bottom: 20vh;
         margin: 20px;
         border-radius: 6px;
     }
-    .imgContainer img{
+
+    .imgContainer img {
         width: 90%;
         border-radius: 8px;
         height: 66vh;
@@ -37,7 +37,7 @@
         background-color: #fff;
         padding: 58px 40px;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
         width: 38%;
         height: 70%;
         border-radius: 12px;
@@ -58,7 +58,7 @@
         flex-direction: column;
     }
 
-    .form {        
+    .form {
         font-family: 'CircularStd-Book';
         text-align: left;
         line-height: 1.2;
@@ -71,13 +71,13 @@
     }
 
     .formGroup label {
-        text-align: left;        
+        text-align: left;
         font-size: 16px;
         color: #151718;
         font-family: sans-serif;
     }
 
-    .formGroup input::placeholder{
+    .formGroup input::placeholder {
         font-family: sans-serif;
         padding-left: 10px;
     }
@@ -95,7 +95,7 @@
         margin-left: 0 !important;
         margin-bottom: 10px !important;
         border: 2px solid #e4ebf5;
-         border-radius: 4px;
+        border-radius: 4px;
     }
 
     ::placeholder {
@@ -109,16 +109,16 @@
         text-align: center;
     }
 
-    .requestCallButton button {    
+    .requestCallButton button {
         margin-top: 20px;
         padding: 1vh 5vh;
-        background-color:#5a79f5;
+        background-color: #5a79f5;
         border-radius: 8px;
         color: #fff;
-        font-size:20px;
+        font-size: 20px;
         text-align: center;
         white-space: nowrap;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', ;
         /* border: 2px solid #e32228; */
         border: 2px solid #fff;
     }
@@ -142,7 +142,7 @@
         font-size: 32px;
         line-height: 1.36;
         text-align: left;
-        color: #fff;        
+        color: #fff;
         padding-left: 10vh;
         position: absolute;
         bottom: 10px;
@@ -165,7 +165,7 @@
         width: 16% !important;
         position: absolute;
         top: 2vw;
-        left:6vw;
+        left: 6vw;
     }
 
     .salesEnquiryProductImgContainer {
@@ -257,5 +257,4 @@
         -webkit-box-orient: vertical;
         display: -webkit-box;
     }
-
 }

@@ -53,10 +53,10 @@ const Fireauth = () => {
         <div className={styles.mainContainer}>
 
             <div className={styles.main}>
-            {/* {user !== null ? <p>guru</p> : */}
-            <div className={styles.imgContainer}>
-                <img src={loginImg} alt="loginImg"></img>
-            </div>
+                {/* {user !== null ? <p>guru</p> : */}
+                <div className={styles.imgContainer}>
+                    <img src={loginImg} alt="loginImg"></img>
+                </div>
                 <div className={styles.rectangleForm}>
                     <div className={styles.formContainer}>
                         <div className={styles.enquiryText}>
