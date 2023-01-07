@@ -1,0 +1,262 @@
+@media only screen and (min-width: 600px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        width: 90%;
+        background-color: #97bdf1;
+        object-fit: contain;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* background-position: center; */
+        /* background-size: 100% 100%; */
+        background-attachment: local;
+        padding-bottom: 20vh;
+        margin: 20px;
+        border-radius: 6px;
+    }
+    .imgContainer img{
+        width: 90%;
+        border-radius: 8px;
+        height: 66vh;
+    }
+
+    .headText {
+        color: white;
+        padding-top: 15vw;
+        font-family: 'CircularStd-Bold';
+        font-size: 46px;
+        text-align: left;
+        padding-left: 2vw;
+    }
+
+    .rectangleForm {
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        background-color: #fff;
+        padding: 58px 40px;
+        display: flex;
+        flex-direction: column;        
+        width: 38%;
+        height: 70%;
+        border-radius: 12px;
+        margin-top: 18vh;
+    }
+
+    .enquiryText h2 {
+        font-family: 'CircularStd-Bold';
+        font-size: 28px;
+        text-align: left;
+        color: #151718;
+        white-space: nowrap;
+        font-family: sans-serif;
+    }
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {        
+        font-family: 'CircularStd-Book';
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    .formGroup {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+
+    .formGroup label {
+        text-align: left;        
+        font-size: 16px;
+        color: #151718;
+        font-family: sans-serif;
+    }
+
+    .formGroup input::placeholder{
+        font-family: sans-serif;
+        padding-left: 10px;
+    }
+
+
+    .inputBox {
+        margin-top: 4px;
+        border: none;
+        width: 100%;
+        line-height: 1.9;
+        outline: none;
+        background-color: white !important;
+        box-shadow: none !important;
+        padding: 0% !important;
+        margin-left: 0 !important;
+        margin-bottom: 10px !important;
+        border: 2px solid #e4ebf5;
+         border-radius: 4px;
+    }
+
+    ::placeholder {
+        font-family: 'CircularStd-Bold';
+        font-size: 1sans-serif4px;
+        text-align: left;
+        color: #878787;
+    }
+
+    .requestCallButton {
+        text-align: center;
+    }
+
+    .requestCallButton button {    
+        margin-top: 20px;
+        padding: 1vh 5vh;
+        background-color:#5a79f5;
+        border-radius: 8px;
+        color: #fff;
+        font-size:20px;
+        text-align: center;
+        white-space: nowrap;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',;
+        /* border: 2px solid #e32228; */
+        border: 2px solid #fff;
+    }
+
+    .isInValid {
+        border-bottom: 2px solid #e32228 !important;
+    }
+
+    .salesFanImg {
+        width: 100%;
+        position: relative;
+    }
+
+    .salesFanImg img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .salesFanImg p {
+        font-family: 'CircularStd-Bold';
+        font-size: 32px;
+        line-height: 1.36;
+        text-align: left;
+        color: #fff;        
+        padding-left: 10vh;
+        position: absolute;
+        bottom: 10px;
+        margin-bottom: 2vw;
+    }
+
+
+
+    .salesEnquiryProductContainer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4vh;
+        padding: 2px;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0vh 8vh;
+    }
+
+    .energyEfficiencyImg {
+        width: 16% !important;
+        position: absolute;
+        top: 2vw;
+        left:6vw;
+    }
+
+    .salesEnquiryProductImgContainer {
+        position: relative;
+        width: 40%;
+    }
+
+    .productImg img {
+        width: 50%;
+    }
+
+    .productImg {
+        width: 97%;
+        padding: 32px 12px 24px 10px;
+        background-color: #fff;
+        align-items: center;
+    }
+
+    .viewAllMainContainer {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    .viewAllContainer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10vh;
+        padding-top: 8px;
+    }
+
+    .viewAllContainer p {
+        color: #397ef5;
+        font-family: CircularStd-Book;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    .viewAllContainer img {
+        padding-left: 4px;
+        height: 20px;
+    }
+
+    .orderDescriptionContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: #fde3ff;
+        margin-top: 2vw;
+        padding: 4vw 6px;
+        align-items: center;
+    }
+
+    .orderHeadText {
+        color: #151617;
+        font-family: 'CircularStd-Bold';
+        font-size: 32px;
+        line-height: 1.31;
+        text-align: left;
+        padding-left: 4vh;
+    }
+
+    .orderDescriptionText {
+        font-family: 'CircularStd-Book';
+        font-size: 22px;
+        line-height: 1.4;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        /* width: 120vh; */
+        /* padding: 46px 0 0; */
+        line-height: 1.32;
+        letter-spacing: normal;
+        text-align: left;
+        color: #151718;
+        padding: 3vw 6vw;
+    }
+
+    .imgProductName {
+        text-align: left;
+        font-family: 'CircularStd-Bold';
+        font-size: 16px;
+        text-align: left;
+        color: #151718;
+        bottom: 15px;
+        left: 22px;
+        position: absolute;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+
+}
