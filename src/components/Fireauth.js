@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-// import { auth } from "../firebase";
 import styles from './firebase.module.css'
-// import auth from '../firebase'
 import loginImg from '../assests/loginImg.png'
+import { signUp, clearAuthError } from "../store/actions";
+import { useDispatch, useSelector } from "react-redux";
+import { useFirebase } from "react-redux-firebase";
+
 const Fireauth = () => {
     const { register, handleSubmit, watch, reset, onChange, formState: { errors } } = useForm({ mode: 'onChange', shouldUseNativeValidation: true, reValidateMode: 'onChange', });
-
+    const firebase =useFirebase();
+    const dispatch = useDispatch();
     // const [password, setPassword] = useState(initialState);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -17,7 +20,7 @@ const Fireauth = () => {
 
         // gurucharan
         console.log("insidesubmit14", data)
-
+        await signUp(data)(firebase, dispatch)
         // let ans = await auth.createUserWithEmailAndPassword(data?.email, data?.password)
         // console.log("ans20", ans)
 
@@ -41,13 +44,10 @@ const Fireauth = () => {
 
     }
 
-    // useEffect(() => {
-    //     let unsub = auth.onAuthStateChanged((user) =>
-    //         setUser(user))
-    //     return () => {
-    //         unsub(); //cleanUp
-    //     }
-    // }, [])
+    //Clear the states in auth reducer
+    useEffect(()=>{
+        clearAuthError(dispatch);
+      }, []);
 
     return (
         <div className={styles.mainContainer}>
