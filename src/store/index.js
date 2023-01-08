@@ -19,6 +19,7 @@ const rrfConfig = {
     useFirestoreForProfile: true, // Firestore for Profile instead of Realtime DB
     attachAuthIsReady: true,
     profileFactory: (userData, profileData, firebase) =>{
+        console.log("The user data is", userData);
         const email = _.get(userData,"user.email", false);
         const uid = _.get(userData, "user.uid", false);
         return{
@@ -30,6 +31,7 @@ const rrfConfig = {
         }
     }
 } 
+
 const store = configureStore({reducer: rootReducer, devTools:composeWithDevTools(), enhancers:composedEnhancers });
 export const rrfProps = {
     firebase,
