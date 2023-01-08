@@ -18,8 +18,6 @@ const Fireauth = () => {
     const onSubmit = async (data) => {
 
 
-        // gurucharan
-        console.log("insidesubmit14", data)
         await signUp(data)(firebase, dispatch)
         // let ans = await auth.createUserWithEmailAndPassword(data?.email, data?.password)
         // console.log("ans20", ans)
