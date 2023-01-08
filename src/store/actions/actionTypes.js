@@ -17,7 +17,7 @@ export const ADDING_DOCTOR_DETAILS_START = 'ADDING_DOCTOR_DETAILS_START';
 export const ADDING_DOCTOR_DETAILS_SUCCESS = 'ADDING_DOCTOR_DETAILS_SUCCESS';
 export const ADDING_DOCTOR_DETAILS_FAIL = 'ADDING_DOCTOR_DETAILS_FAIL';
 
-//clear doctor details adding states
+//clear doctor details adding states  okkk 
 export const CLEAR_DOCTOR_DETAILS_STATE = 'CLEAR_DOCTOR_DETAILS_STATE';
 
 //Adding Rating Functions
