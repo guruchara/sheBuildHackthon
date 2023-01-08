@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from './firebase.module.css'
-import loginImg from '../assests/loginImg.png'
+import simple from '../assests/simple.png'
 import { signUp, clearAuthError } from "../store/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useFirebase } from "react-redux-firebase";
@@ -55,7 +55,7 @@ const Fireauth = () => {
             <div className={styles.main}>
                 {/* {user !== null ? <p>guru</p> : */}
                 <div className={styles.imgContainer}>
-                    <img src={loginImg} alt="loginImg"></img>
+                    <img src={simple} alt="loginImg"></img>
                 </div>
                 <div className={styles.rectangleForm}>
                     <div className={styles.formContainer}>
@@ -77,10 +77,8 @@ const Fireauth = () => {
                             <label htmlFor="password">Password</label>
                             <input type="password" name="pincode" onChange={(e) => setPassword(e.target.value)} className={styles.inputBox} placeholder="please enter password" {...register("password")} />
                         </div>
-
-
+{/* hackathon */}
                         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-
                             <div className={styles.requestCallButton} >
                                 <button>Sign Up</button>
                             </div>

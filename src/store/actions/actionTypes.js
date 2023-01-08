@@ -5,3 +5,5 @@ export const SIGN_UP_FAIL = 'SIGN_UP_FAIL';
 
 //clear states
 export const CLEAR_AUTH_STATE = 'CLEAR_AUTH_STATE';
+
+// 

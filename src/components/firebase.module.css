@@ -15,6 +15,7 @@
         padding-bottom: 20vh;
         margin: 20px;
         border-radius: 6px;
+        margin-top: 16vh;
     }
 
     .imgContainer img {
@@ -41,7 +42,6 @@
         width: 38%;
         height: 70%;
         border-radius: 12px;
-        margin-top: 18vh;
     }
 
     .enquiryText h2 {

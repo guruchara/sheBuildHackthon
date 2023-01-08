@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import {
   ReactReduxFirebaseProvider,
 } from 'react-redux-firebase'
+import '@material-ui/core/styles';
+
 import store, {rrfProps} from './../src/store';
 
 const rootElement = document.getElementById('root');
